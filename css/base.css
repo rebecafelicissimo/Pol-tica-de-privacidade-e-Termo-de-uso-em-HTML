@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+/*##### Criação de Variáveis #####*/
+:root {
+  /*##### Cores #####*/
+  --azul-escuro: #221e35;
+  --vermelho: #e73739;
+  --branco: #ffffff;
+  --branco-escuro: #f6f6f6;
+  --preto: #000000;
+  --cinza-claro: #cecece;
+  
+  /*##### Fontes #####*/
+  --title-comfortaa: 'Comfortaa', cursive;
+  --corpo-raleway: 'Raleway', sans-serif;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  background-color: var(--branco-escuro);
+  font-family: var(--corpo-raleway);
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: var(--title-comfortaa);
+}

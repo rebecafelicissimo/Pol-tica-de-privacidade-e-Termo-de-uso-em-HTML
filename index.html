@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>appy hour - Os melhores happy hours você encontra aqui.</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navigation-header">
+        <img
+          class="logo-header"
+          src="assets/images/logo-azul-e-vermelho.png"
+          alt="Logomarca da appy hour nas cores branco e vermelho"/>
+
+        <button class="botao">
+          <a class="link-header" href="https://estabelecimento.appyhour.com.br/">Entrar</a>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- navegação -->
+  <section>
+    <div class="container">
+      <nav class="navigation-menu">
+        <ul class="navigation-menu-list">
+          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">quem somos</a></li>
+          <li class="pipe">||</li>
+          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">benefícios</a></li>
+          <li class="pipe">||</li>
+          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">mensalidade</a></li>
+          <li class="pipe">||</li>
+          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">como cadastrar</a></li>
+          <li class="pipe">||</li>
+          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">criando cardápio</a></li>
+          <li class="pipe">||</li>
+          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- quem somos -->
+  <section id="quemSomos" class="quemSomos">
+    <div class="container">
+      <div class="quemSomos-organization">
+        <div class="quemSomos-organization-itens">
+          <img class="quemSomos-images" src="assets/images/logoAzulVermelho.webp" alt="">
+          <h1 class="title">Somos um aplicativo focado
+            <span>na divulgação de happy hour</span>.</h1>
+          <img class="quemSomos-images" src="assets/images/pessoas-aplicativo.webp" alt="">
+        </div>
+
+        <div class="quemSomos-organization-itens">
+          <h2 class="subtitle">Quer saber mais?</h2>
+          <p class="conteudo">Deixe seus dados que entraremos em contato.</p>
+
+          <form action="#">  <!-- criar as validações via js -->
+            <fieldset>
+              <legend>Contato</legend>
+              <label for="personName">Nome Completo:
+              </label>
+                <input type="text" name="personName"  id="personName" required>
+
+              <label for="email">E-mail:
+              </label>
+                <input type="email" name="email" id="email" required>
+
+              <label for="celphoneNumber">Telefone Celular:
+              </label>
+                <input type="number" name="celphoneNumber"  id="celphoneNumber" required>
+
+              <label for="fantasyName">Nome Fantasia do Estabelecimento:
+              </label>
+                <input type="text" name="fantasyName"  id="fantasyName" >
+
+              <label for="city">Cidade:
+              </label>
+                <input type="text" name="city"  id="city" required>
+
+              <label for="state">Estado:
+              </label>
+                <input type="text" name="state"  id="state" required>
+
+              <label for="privacyPolicyCheckbox">
+                <input type="checkbox" name="privacyPolicyCheckbox"  id="privacyPolicyCheckbox" required>
+                Eu li e aceito a Política de      Privacidade ao enviar meus dados.
+              </label>
+              
+              <button type="submit">enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- logo-azul-e-vermelho
+      titulo em h1 
+      formulário -->
+    </div>
+  </section>
+  
+</body>
+</html>

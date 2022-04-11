@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+
+/* #### componentes reutilizáveis #### */
+div.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.conteudo {
+  font-size: 1.2rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0.0625rem; /* 1px */
+  margin-bottom: 1rem;
+}
+
+.title {
+  line-height: 2.1875rem; /* 35px */
+  text-align: center;
+}
+
+.conteudo:last-child {
+  margin-bottom: 0;
+}
+
+.conteudo::first-letter {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.conteudo-links {
+  color: var(--preto);
+  font-weight: 700;
+}
+
+.conteudo-links:visited {
+  color: var(--vermelho);
+  font-weight: 300;
+}
+
+.subtitle {
+  font-weight: 700;
+  line-height: 2.1875rem;
+  /* text-align: center; */
+  margin-bottom: 1rem;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px 0;
+  gap: 2rem;
+}
+
+.horizontalLine {
+  border: 1px solid var(--vermelho);
+}
+
+/* #### /componentes reutilizáveis #### */
+header {
+  height: 180px;
+}
+
+.logo-header {
+  width: 40%;
+}
+
+.title-header {
+  color: var(--azul-escuro);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+section {
+  padding: 1.875rem 0;  /* 30px */
+}
+
+/* #### menu de navegação #### */
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav ul li.pipe {
+  margin: 0 8px;
+}
+
+nav ul li a {
+  color: var(--azul-escuro);
+  font-weight: 700;
+}
+
+nav ul li a:hover, nav ul li a:active {
+  color: var(--vermelho);
+}
+/* #### /menu de navegação #### */
+
+/* #### bloco do título principal #### */
+.organization-container-update {
+  margin: 1.25rem 0;  /* 20px */
+}
+
+.organization-container-update p {
+  text-align: center;
+  line-height: 1.5rem;  
+}
+/* #### /bloco do título principal #### */
+
+/* #### bloco da política de privacidade #### */
+.politica-list .politica-list-item {
+  font-weight: 700;
+  line-height: 2.1875rem;
+  list-style: circle inside;
+}
+
+/* #### rodapé #### */
+
+footer .flex-box {
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+
+
+/* #### media-queries #### */
+@media (min-width: 1000px) {
+  .flex-box img.logo-header {
+    width: 20%;   
+  }  
+}
+
+@media (min-width: 700px) {
+  img.logo-header {
+    width: 30%;   
+  }
+
+  h1.title-header{
+    font-size: 1.2rem;
+  }
+}

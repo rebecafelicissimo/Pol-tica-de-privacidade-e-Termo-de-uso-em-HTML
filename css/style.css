@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+/* ################### */
+div.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.botao {
+  width: 85px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--vermelho);
+  box-shadow: 4px 4px 4px var(--azul-escuro);
+}
+
+section {
+  margin: 40px 0;
+  padding: 30px 0;
+
+  border: 1px solid rgb(65, 15, 245);
+}
+
+.pipe {
+  color: var(--vermelho);
+  font-weight: 700;
+}
+
+span {
+  color: var(--vermelho);
+}
+
+.title {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+
+/* #### header #### */
+
+header {
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px 0;
+  border: 1px dashed green;
+}
+.logo-header {
+  width: 35%;
+}
+
+.botao .link-header {
+  color: var(--branco-escuro);
+  font-weight: 700;
+}
+
+.navigation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* #### navegação do menu #### */
+.navigation-menu .navigation-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 15px;  
+}
+
+.navigation-menu-list-item .navigation-menu-links {
+  color: var(--azul-escuro);
+  font-weight: 700;
+}
+
+/* #### quem somos #### */
+.quemSomos-images {
+  width: 100%;
+}
+
+.quemSomos-organization-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 30px; */
+  margin-bottom: 30px;
+}
+
+.quemSomos-organization-itens h1 {
+  margin: 30px 0;
+}
+
+/* #### formulário #### */
+legend {
+  color: var(--vermelho);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px dashed var(--vermelho);
+  padding: 20px;
+}
