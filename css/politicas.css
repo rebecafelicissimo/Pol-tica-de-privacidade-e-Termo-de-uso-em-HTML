@@ -91,10 +91,6 @@ nav ul li a {
   color: var(--azul-escuro);
   font-weight: 700;
 }
-
-nav ul li a:hover {
-  color: var(--vermelho);
-}
 /* #### /menu de navegação #### */
 
 /* #### bloco do título principal #### */

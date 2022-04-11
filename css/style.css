@@ -12,6 +12,8 @@ div.container {
   border-radius: 10px;
   background-color: var(--vermelho);
   box-shadow: 4px 4px 4px var(--azul-escuro);
+  color: var(--branco-escuro);
+  font-weight: 700;
 }
 
 section {
@@ -26,8 +28,9 @@ section {
   font-weight: 700;
 }
 
-span {
+.span {
   color: var(--vermelho);
+  font-weight: 700;
 }
 
 .title {
@@ -93,6 +96,10 @@ header {
 }
 
 /* #### formulário #### */
+form {
+  margin-top: 20px;
+}
+
 legend {
   color: var(--vermelho);
   font-size: 1.2rem;
@@ -108,3 +115,38 @@ fieldset {
   border: 2px dashed var(--vermelho);
   padding: 20px;
 }
+
+label {
+  color: var(--azul-escuro);
+  font-weight: 700;
+}
+
+input {
+  margin: 5px 0 20px;
+  height: 25px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--azul-escuro);
+}
+
+input:focus {
+  outline: var(--vermelho);
+  border-bottom: 1px solid var(--vermelho);
+}
+
+.policy-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 5px 0 20px;
+}
+
+fieldset button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* #### benefícios #### */
+
+
+
