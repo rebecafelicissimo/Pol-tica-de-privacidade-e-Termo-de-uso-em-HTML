@@ -17,3 +17,267 @@ input type name id value
 
 seção
 section# .>container>.nomedaclasse-organization
+
+
+<!-- <header>
+      <div class="container">
+        <nav class="navigation-header">
+          <img
+            class="logo-header"
+            src="assets/images/logo-azul-e-vermelho.png"
+            alt="Logomarca da appy hour nas cores branco e vermelho"
+          />
+
+          <button class="botao">
+            <a
+              class="link-header"
+              href="https://estabelecimento.appyhour.com.br/"
+              >Entrar</a
+            >
+          </button>
+        </nav>
+      </div>
+    </header> -->
+
+    <!-- navegação -->
+    <!-- <section>
+      <div class="container">
+        <nav class="navigation-menu">
+          <ul class="navigation-menu-list">
+            <li class="navigation-menu-list-item">
+              <a class="navigation-menu-links" href="#">quem somos</a>
+            </li>
+            <li class="pipe">||</li>
+            <li class="navigation-menu-list-item">
+              <a class="navigation-menu-links" href="#">benefícios</a>
+            </li>
+            <li class="pipe">||</li>
+            <li class="navigation-menu-list-item">
+              <a class="navigation-menu-links" href="#">mensalidade</a>
+            </li>
+            <li class="pipe">||</li>
+            <li class="navigation-menu-list-item">
+              <a class="navigation-menu-links" href="#">como cadastrar</a>
+            </li>
+            <li class="pipe">||</li>
+            <li class="navigation-menu-list-item">
+              <a class="navigation-menu-links" href="#">criando cardápio</a>
+            </li>
+            <li class="pipe">||</li>
+            <li class="navigation-menu-list-item">
+              <a class="navigation-menu-links" href="#">contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section> -->
+
+    <!-- quem somos -->
+    <section id="quemSomos" class="quemSomos">
+      <div class="container">
+        <div class="quemSomos-organization">
+          <div class="quemSomos-organization-itens">
+            <img
+              class="quemSomos-images"
+              src="assets/images/logoAzulVermelho.webp"
+              alt=""
+            />
+            <h1 class="title">
+              Somos um aplicativo focado
+              <span class="span">na divulgação de happy hour</span>.
+            </h1>
+            <img
+              class="quemSomos-images"
+              src="assets/images/pessoas-aplicativo.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="quemSomos-organization-itens">
+            <h2 class="subtitle">Quer saber mais?</h2>
+            <p class="conteudo">Deixe seus dados que entraremos em contato.</p>
+
+            <form action="#">
+              <!-- criar as validações via js -->
+              <fieldset>
+                <legend>Contato</legend>
+                <label for="personName">Nome Completo: </label>
+                <input type="text" name="personName" id="personName" required />
+
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" required />
+
+                <label for="celphoneNumber">Telefone Celular: </label>
+                <input
+                  type="number"
+                  name="celphoneNumber"
+                  id="celphoneNumber"
+                  required
+                />
+
+                <label for="fantasyName"
+                  >Nome Fantasia do Estabelecimento:
+                </label>
+                <input type="text" name="fantasyName" id="fantasyName" />
+
+                <label for="city">Cidade: </label>
+                <input type="text" name="city" id="city" required />
+
+                <label for="state">Estado: </label>
+                <input type="text" name="state" id="state" required />
+
+                <div class="policy-checkbox">
+                  <input
+                    type="checkbox"
+                    name="privacyPolicyCheckbox"
+                    id="privacyPolicyCheckbox"
+                    required
+                  />
+                  <label for="privacyPolicyCheckbox">
+                    Eu li e aceito a
+                    <a class="span" href="politicas-e-termos/politicas.html"
+                      >Política de Privacidade do site</a
+                    >
+                    ao enviar meus dados.
+                  </label>
+                </div>
+
+                <button class="botao" type="submit">enviar</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <!-- logo-azul-e-vermelho
+      titulo em h1 
+      formulário -->
+      </div>
+    </section>
+
+    <section id="beneficio" class="beneficios">
+      <div class="container">
+        <div class="beneficios-organization"></div>
+      </div>
+    </section>
+
+    <section id="beneficio" class="beneficios">
+      <div class="container">
+        <div class="beneficios-organization"></div>
+      </div>
+    </section>
+
+    <section id="beneficio" class="beneficios">
+      <div class="container">
+        <div class="beneficios-organization"></div>
+      </div>
+    </section>
+
+    <section id="beneficio" class="beneficios">
+      <div class="container">
+        <div class="beneficios-organization"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <a href="politicas.html">politica site</a>
+        <a href="plataforma.html">politica plataforma</a>
+        <a href="app-privacy-policy.html">politica aplicativo</a>
+      </div>
+    </section>
+    
+
+
+    
+/* #### header #### */
+
+
+
+
+/*
+div.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.botao {
+  width: 85px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--vermelho);
+  box-shadow: 4px 4px 4px var(--azul-escuro);
+  color: var(--branco-escuro);
+  font-weight: 700;
+}
+
+section {
+  margin: 40px 0;
+  padding: 30px 0;
+
+  border: 1px solid rgb(65, 15, 245);
+}
+
+.pipe {
+  color: var(--vermelho);
+  font-weight: 700;
+}
+
+.span {
+  color: var(--vermelho);
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+
+.logo-header {
+  width: 35%;
+}
+
+.botao .link-header {
+  color: var(--branco-escuro);
+  font-weight: 700;
+}
+
+.navigation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* #### navegação do menu #### */
+.navigation-menu .navigation-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 15px;  
+}
+
+.navigation-menu-list-item .navigation-menu-links {
+  color: var(--azul-escuro);
+  font-weight: 700;
+}
+
+/* #### quem somos #### */
+.quemSomos-images {
+  width: 100%;
+}
+
+.quemSomos-organization-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 30px; */
+  margin-bottom: 30px;
+}
+
+.quemSomos-organization-itens h1 {
+  margin: 30px 0;
+}

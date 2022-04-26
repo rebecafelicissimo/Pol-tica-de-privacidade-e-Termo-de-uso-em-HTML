@@ -1,28 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+
 /*##### Criação de Variáveis #####*/
 :root {
-  /*##### Cores #####*/
-  --azul-escuro: #221e35;
-  --vermelho: #e73739;
-  --branco: #ffffff;
-  --branco-escuro: #f6f6f6;
-  --preto: #000000;
-  --cinza-claro: #cecece;
-  
+  --hue: 250; 
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 28% 16%); /* azul escuro */ /* botão active */
+  --base-color-second: hsl(var(--hue) 28% 32%); /* botão padrão */
+  --base-color-alt: hsl(var(--hue) 28% 24%); /* botão hover */ 
+
+  --title-color: hsl(var(--hue) 28% 16%);
+  --text-color: hsla(0, 30%, 5%, 0.9);
+  --text-color-light: hsl(0, 0%, 96%); /* f6f6f6 */
+  --body-color: hsl(0, 0%, 98%); /* fafafa */
+  --body-color-alt: hsl(0, 0%, 96%); /* f6f6f6 */
+  --detail-color: hsl(359, 79%, 56%);
+  --shadow: hsl(0, 0%, 64%);
+
   /*##### Fontes #####*/
-  --title-comfortaa: 'Comfortaa', cursive;
-  --corpo-raleway: 'Raleway', sans-serif;
+  --title-body: 'Comfortaa', cursive;
+  --corpo-body: 'Raleway', sans-serif;
 }
 
 html {
   font-size: 1rem;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--branco-escuro);
-  font-family: var(--corpo-raleway);
+  font: 400 1rem var(--corpo-body);
+  color: var(--text-color);
+  background-color: var(--body-color);
+  -webkit-font-smoothing: antialiased; 
 }
 
-h1, h2, h3, h4, h5, h6, a {
-  font-family: var(--title-comfortaa);
+h1 {
+  font: 700 1.875rem var(--title-body);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto; 
 }
+

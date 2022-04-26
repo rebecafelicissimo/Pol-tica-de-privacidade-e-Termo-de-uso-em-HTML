@@ -1,157 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>appy hour - Os melhores happy hours você encontra aqui.</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <nav class="navigation-header">
-        <img
-          class="logo-header"
-          src="assets/images/logo-azul-e-vermelho.png"
-          alt="Logomarca da appy hour nas cores branco e vermelho"/>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appy hour - Os melhores happy hours você encontra aqui.</title>
 
-        <button class="botao">
-          <a class="link-header" href="https://estabelecimento.appyhour.com.br/">Entrar</a>
-        </button>
+    <!-- ÍCONES -->
+    <link rel="stylesheet" href="assets/icon-fonts/style.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container show">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="assets/images/azul-vermelho.svg"
+            alt="logomarca do appy hour nas cores azul e vermelho"
+        /></a>
+
+        <div class="menu">...</div>
+
+        <!-- <div class="menu">
+          <ul>
+            <li><a href="#" class="title"></a>quem somos</li>
+            <li><a href="#" class="title"></a>benefícios</li>
+            <li><a href="#" class="title"></a>mensalidade</li>
+            <li><a href="#" class="title"></a>como cadastrar</li>
+            <li><a href="#" class="title"></a>criando cardápio</li>
+            <li><a href="#" class="title"></a>contato</li>
+            <li><a href="#" class="title button"></a>entrar</li>
+          </ul>
+        </div> -->
+        <!-- <div class="icon-menu toggle"></div> -->
+        <!-- <div class="icon-close"></div> -->
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- navegação -->
-  <section>
-    <div class="container">
-      <nav class="navigation-menu">
-        <ul class="navigation-menu-list">
-          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">quem somos</a></li>
-          <li class="pipe">||</li>
-          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">benefícios</a></li>
-          <li class="pipe">||</li>
-          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">mensalidade</a></li>
-          <li class="pipe">||</li>
-          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">como cadastrar</a></li>
-          <li class="pipe">||</li>
-          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">criando cardápio</a></li>
-          <li class="pipe">||</li>
-          <li class="navigation-menu-list-item"><a class="navigation-menu-links" href="#">contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+    <main>
+      <section id="about" class="section">
+        <div class="container grid">
+          <div class="image-text">
+            <img
+              class="image"
+              src="assets/images/vermelho-azul-escrito.svg"
+              alt=""
+            />
+            <h1>
+              Somos um aplicativo focado
+              <span class="span">na divulgação de happy hour</span>.
+            </h1>
+            <img class="image" src="assets/images/pessoas.svg" alt="" />
+          </div>
 
-  <!-- quem somos -->
-  <section id="quemSomos" class="quemSomos">
-    <div class="container">
-      <div class="quemSomos-organization">
-        <div class="quemSomos-organization-itens">
-          <img class="quemSomos-images" src="assets/images/logoAzulVermelho.webp" alt="">
-          <h1 class="title">Somos um aplicativo focado
-            <span class="span">na divulgação de happy hour</span>.</h1>
-          <img class="quemSomos-images" src="assets/images/pessoas-aplicativo.webp" alt="">
-        </div>
+          <div class="text">
+            <h2>Quer saber mais?</h2>
+            <p>Deixe seus dados que entraremos em contato.</p>
 
-        <div class="quemSomos-organization-itens">
-          <h2 class="subtitle">Quer saber mais?</h2>
-          <p class="conteudo">Deixe seus dados que entraremos em contato.</p>
+            <form action="#" class="validator">
+              <!-- criar as validações via js -->
+              <fieldset>
+                <legend>Contato</legend>
+                <label for="personName">Nome Completo: </label>
+                <input type="text" name="personName" id="personName" required/>
 
-          <form action="#">  <!-- criar as validações via js -->
-            <fieldset>
-              <legend>Contato</legend>
-              <label for="personName">Nome Completo:
-              </label>
-                <input type="text" name="personName"  id="personName" required>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" required />
 
-              <label for="email">E-mail:
-              </label>
-                <input type="email" name="email" id="email" required>
+                <label for="celphoneNumber">Telefone Celular: </label>
+                <input
+                  type="number"
+                  name="celphoneNumber"
+                  id="celphoneNumber"
+                  required
+                />
 
-              <label for="celphoneNumber">Telefone Celular:
-              </label>
-                <input type="number" name="celphoneNumber"  id="celphoneNumber" required>
-
-              <label for="fantasyName">Nome Fantasia do Estabelecimento:
-              </label>
-                <input type="text" name="fantasyName"  id="fantasyName" >
-
-              <label for="city">Cidade:
-              </label>
-                <input type="text" name="city"  id="city" required>
-
-              <label for="state">Estado:
-              </label>
-                <input type="text" name="state"  id="state" required>
-
-              <div class="policy-checkbox">
-                <input type="checkbox" name="privacyPolicyCheckbox"  id="privacyPolicyCheckbox" required>
-                <label for="privacyPolicyCheckbox">
-                  Eu li e aceito a <a class="span" href="politicas-e-termos/politicas.html">Política de   Privacidade do site</a> ao enviar meus dados.
+                <label for="fantasyName"
+                  >Nome Fantasia do Estabelecimento:
                 </label>
-              </div>
-              
-              <button class="botao" type="submit">enviar</button>
-            </fieldset>
-          </form>
+                <input type="text" name="fantasyName" id="fantasyName" />
+
+                <label for="city">Cidade: </label>
+                <input type="text" name="city" id="city" required />
+
+                <label for="state">Estado: </label>
+                <input type="text" name="state" id="state" required />
+
+                <div class="policy-checkbox">
+                  <input
+                    type="checkbox"
+                    name="privacyPolicyCheckbox"
+                    id="privacyPolicyCheckbox"
+                    required
+                  />
+                  <label for="privacyPolicyCheckbox">
+                    Eu li e aceito a
+                    <a class="span" href="politicas-e-termos/politicas.html"
+                      >Política de Privacidade do site</a
+                    >
+                    ao enviar meus dados.
+                  </label>
+                </div>
+                <button class="button" type="submit">enviar</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
-      </div>
+      </section>
 
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
 
-      <!-- logo-azul-e-vermelho
-      titulo em h1 
-      formulário -->
-    </div>
-  </section>
-
-  <section id="beneficio" class="beneficios">
-    <div class="container">
-      <div class="beneficios-organization">
-
-      </div>
-    </div>
-  </section>
-
-  <section id="beneficio" class="beneficios">
-    <div class="container">
-      <div class="beneficios-organization">
-        
-      </div>
-    </div>
-  </section>
-
-
-  
-  <section id="beneficio" class="beneficios">
-    <div class="container">
-      <div class="beneficios-organization">
-        
-      </div>
-    </div>
-  </section>
-
-  <section id="beneficio" class="beneficios">
-    <div class="container">
-      <div class="beneficios-organization">
-        
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section>
-    <div class="container">
-      <a href="politicas.html">politica site</a>
-      <a href="plataforma.html">politica plataforma</a>
-      <a href="app-privacy-policy.html">politica aplicativo</a>
-    </div>
-  </section>
-  
-</body>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>

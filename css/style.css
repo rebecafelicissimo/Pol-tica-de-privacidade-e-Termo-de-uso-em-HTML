@@ -1,107 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
-/* ################### */
-div.container {
+/* ===== Layout ===== */
+.container {
   width: 90%;
   margin: 0 auto;
 }
 
-.botao {
-  width: 85px;
-  height: 45px;
-  border: none;
-  border-radius: 10px;
-  background-color: var(--vermelho);
-  box-shadow: 4px 4px 4px var(--azul-escuro);
-  color: var(--branco-escuro);
-  font-weight: 700;
+.section {
+  padding: 5rem 0;
 }
 
-section {
-  margin: 40px 0;
-  padding: 30px 0;
-
-  border: 1px solid rgb(65, 15, 245);
-}
-
-.pipe {
-  color: var(--vermelho);
-  font-weight: 700;
+.grid {
+  display: grid;
+  gap: 2rem;
 }
 
 .span {
-  color: var(--vermelho);
+  color: var(--detail-color);
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--base-color-second);
+  box-shadow: 3px 3px 5px var(--shadow);
+  color: var(--text-color-light);
   font-weight: 700;
 }
 
-.title {
-  font-size: 1.3rem;
-  line-height: 2rem;
+.button:hover {
+  background-color: var(--base-color-alt);
 }
 
+.button:active {
+  background-color: var(--base-color);
+}
 
-/* #### header #### */
+.button a {
+  color: var(--text-color-light);
+  font-weight: 700;
+}
 
-header {
-  box-sizing: border-box;
+/* ===== Logo ===== */
+.logo {
+  width: 25%;
+}
+
+/* ===== Images ===== */
+img {
+  width: 100%;
   height: auto;
-  padding: 20px 0;
-  border: 1px dashed green;
-}
-.logo-header {
-  width: 35%;
 }
 
-.botao .link-header {
-  color: var(--branco-escuro);
-  font-weight: 700;
+img.image {
+  width: 80%;
+  height: auto;
 }
 
-.navigation-header {
+/* ===== Header ===== */
+#header {
+  display: flex;
+  background-color: var(--body-color-alt);
+  border-bottom: 1px solid #E4E4E4;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* ===== Navigation ===== */
+nav {
+  height: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-/* #### navegação do menu #### */
-.navigation-menu .navigation-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  gap: 15px;  
-}
-
-.navigation-menu-list-item .navigation-menu-links {
-  color: var(--azul-escuro);
-  font-weight: 700;
-}
-
-/* #### quem somos #### */
-.quemSomos-images {
   width: 100%;
 }
 
-.quemSomos-organization-itens {
+
+
+
+main {
+  margin-top: 4.5rem;
+}
+
+/* ===== About ===== */
+
+#about .image-text {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
-  justify-content: space-evenly;
-  /* gap: 30px; */
-  margin-bottom: 30px;
+  justify-content: center;
+  text-align: center;
 }
 
-.quemSomos-organization-itens h1 {
-  margin: 30px 0;
+#about .image-text h1 {
+  font-size: 1.6rem;
+  line-height: 3rem;
 }
 
-/* #### formulário #### */
+#about .text h2, #about .text p {
+  text-align: center;
+}
+
+/* ===== Formulário ===== */
 form {
   margin-top: 20px;
 }
 
 legend {
-  color: var(--vermelho);
+  color: var(--detail-color);
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
@@ -112,12 +122,12 @@ fieldset {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 2px dashed var(--vermelho);
+  border: 2px dashed var(--detail-color);
   padding: 20px;
 }
 
 label {
-  color: var(--azul-escuro);
+  color: var(--base-color);
   font-weight: 700;
 }
 
@@ -126,12 +136,12 @@ input {
   height: 25px;
   background: none;
   border: none;
-  border-bottom: 1px solid var(--azul-escuro);
+  border-bottom: 1px solid var(--base-color);
 }
 
 input:focus {
-  outline: var(--vermelho);
-  border-bottom: 1px solid var(--vermelho);
+  outline: var(--detail-color);
+  border-bottom: 1px solid var(--detail-color);
 }
 
 .policy-checkbox {
